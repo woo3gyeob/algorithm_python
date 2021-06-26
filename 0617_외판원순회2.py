@@ -1,7 +1,6 @@
-
 def dfs(node, cost, cnt):
     global min_cost
-    if cost >= min_cost:
+    if cost >= min_cost: #가지치기용
         return
     if cnt == n:
         if not W[node][start]: return

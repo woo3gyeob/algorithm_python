@@ -3,7 +3,7 @@ string = input()
 n = len(string)
 min_num = ''
 max_num = ''
-tmp = 0
+tmp = 0     # M개수 세는용
 for i in range(n):
     if string[i] == 'K':
         if tmp > 0:
@@ -19,4 +19,5 @@ for i in range(n):
 
 print(max_num)
 print(min_num)
-            
+
+# M K K M M K
