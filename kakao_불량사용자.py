@@ -14,7 +14,7 @@ def solution(user_id, banned_id):
                 for j in range(len(user)):
                     if ban[j] == '*': continue
                     if user[j] != ban[j]: return
-                    
+
             new = sorted(sel)
             # print(new)
             string = ''.join(new)
