@@ -1,7 +1,5 @@
 # 29200KB, 2476ms
-
 import sys
-# input = sys.stdin.readline()
 
 def dfs(start):
     global result
@@ -16,8 +14,8 @@ def dfs(start):
 
 n = int(input())
 m = int(input())
-arr = [list(map(int, input().split())) for _ in range(n)]
-plan = list(map(int, input().split()))
+arr = [list(map(int, sys.stdin.readline().split())) for _ in range(n)]
+plan = list(map(int, sys.stdin.readline().split()))
 
 for i in range(m-1):
     start = plan[i] - 1
