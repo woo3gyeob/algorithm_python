@@ -1,3 +1,4 @@
+# 백준 1976 여행가자
 # 29200KB, 2476ms
 import sys
 
@@ -17,6 +18,7 @@ m = int(input())
 arr = [list(map(int, sys.stdin.readline().split())) for _ in range(n)]
 plan = list(map(int, sys.stdin.readline().split()))
 
+# 1 2 3
 for i in range(m-1):
     start = plan[i] - 1
     target = plan[i+1] - 1
