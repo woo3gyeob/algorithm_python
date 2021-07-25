@@ -1,9 +1,11 @@
 # 백준 15661
 # pypy3 136736KB, 1600ms
+
 n = int(input())
 arr = [list(map(int, input().split())) for _ in range(n)]
 total = list(range(n))
 min_diff = 0xffffff
+
 def calc():
     global min_diff
     linkTeam = [i for i in total if i not in startTeam]
@@ -39,3 +41,22 @@ for target in range(1, n//2 + 1):
     comb(0,0)
 
 print(min_diff)
+
+'''
+ex)
+0  1  1  1
+1  0  1  1
+1  1  0  1
+1  1 100 0
+
+비교1)
+4 vs 1 2 3
+0 and 6 = 6
+
+비교2)
+3 4 vs 1 2
+103 and 4
+.
+.
+4 혼자 있는게 차이가 제일 작다
+'''
