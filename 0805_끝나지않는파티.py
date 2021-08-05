@@ -1,9 +1,10 @@
 # 백준 11265 끝나지 않는 파티
 # https://www.acmicpc.net/problem/11265
-# PyPy3 130436KB / 3660ms 
+# PyPy3 129540KB / 2884ms
+import sys
 
 n, m = map(int, input().split())
-arr = [list(map(int, input().split())) for _ in range(n)]
+arr = [list(map(int, sys.stdin.readline().split())) for _ in range(n)]
 
 def dfs(party, time):
     if time < 0:
@@ -19,7 +20,7 @@ def dfs(party, time):
     return False
 
 for _ in range(m):
-    start, target, time = map(int, input().split())
+    start, target, time = map(int, sys.stdin.readline().split())
     start -= 1
     target -= 1
     visit = [0]*n
