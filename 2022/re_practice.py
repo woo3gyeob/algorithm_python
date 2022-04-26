@@ -81,22 +81,22 @@ def solution(a):
                 elif j == n-1 and find_num > 1:
                     string += str(find_num) + find_word
                 find_word = a[j:j+i]
-                print('합쳐진 단어: ', string)
+                # print('합쳐진 단어: ', string)
             else:
-                print('찾은 단어 수: ', find_num, '찾은 단어: ', find_word, '인덱스: ', j)
+                # print('찾은 단어 수: ', find_num, '찾은 단어: ', find_word, '인덱스: ', j)
                 if find_num == 1:
                     string += find_word
                 else:
                     string += str(find_num) + find_word
                 find_word = a[j:j+i]
                 find_num = 1
-                print('합쳐진 단어: ', string)
-                print('다음 찾을 단어: ', find_word)
-                print('-----------------------------------')
+                # print('합쳐진 단어: ', string)
+                # print('다음 찾을 단어: ', find_word)
+                # print('-----------------------------------')
         
-        print('----------------------- 최종 ------------------------')
-        print('만든 단어: ', string)
-        print('-----------------------------------')
+        # print('----------------------- 최종 ------------------------')
+        # print('만든 단어: ', string)
+        # print('-----------------------------------')
         answer.append(string)
             
     return answer
